@@ -1,4 +1,3 @@
-// components/CustomButton.js
 import React from 'react';
 import styled from 'styled-components/native';
 
@@ -7,6 +6,7 @@ const ButtonContainer = styled.TouchableOpacity`
   padding: 10px 20px;
   border-radius: 5px;
   align-items: center;
+  margin-top: 16px;
 `;
 
 const ButtonText = styled.Text`

@@ -1,4 +1,3 @@
-// theme/ThemeContext.js
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import { Appearance, useColorScheme } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
@@ -31,7 +30,7 @@ export const ThemeProviderWrapper = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ toggleTheme }}>
-      <ThemeContext.Provider theme={theme}>{children}</ThemeContext.Provider>
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </ThemeContext.Provider>
   );
 };
